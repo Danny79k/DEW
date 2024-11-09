@@ -44,7 +44,14 @@ function displayTweet(tweetObject) {
     div1.appendChild(aSpan)
     aSpan.addEventListener('click', (e) => {
         console.log("click");
+        console.log(e.target);
         let id = e.target.getAttribute('action')
+        if (id === null) {
+            id = e.target.parentElement.getAttribute('action')
+            if (id === null) {
+                id = e.target.parentElement.parentElement.getAttribute('action')
+            }
+        }
         console.log(`id: ${id}`);
         localStorage.removeItem(id)
         if (id === aSpan.getAttribute('action'))
