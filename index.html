@@ -8,18 +8,20 @@
     <title>Document</title>
 </head>
 
-<body>
-    <div class="d-flex flex-column col-2 shadow-lg">
-        <h1 class="display-5 text-center">Local Storage</h1>
-        <p class="text-center">Tweet:</p>
-
-        <textarea name="" id="textarea" class="m-2"></textarea>
-        <button class="m-2 btn btn-primary" id="btn" value="enviar">submit</button>
-        <div id="mensajes">
-            <p class="display-6 text-center">mi mensajes</p>
-
+<body  data-bs-theme="dark">
+    <main class="d-flex justify-content-center mb-5">
+        <div class="d-flex flex-column col-2 bg-light text-black shadow-lg border mt-5" data-bs-theme="light">
+            <h1 class="display-5 text-center">Local Storage</h1>
+            <p class="text-center">Tweet:</p>
+    
+            <textarea name="" id="textarea" class="m-2 text-black bg-white"></textarea>
+            <button class="m-2 btn btn-primary" id="btn" value="enviar">submit</button>
+            <div id="mensajes">
+                <p class="display-6 text-center">mi mensajes</p>
+    
+            </div>
         </div>
-    </div>
+    </main>
 
     <!-- script -->
     <script src="script.js"></script>
