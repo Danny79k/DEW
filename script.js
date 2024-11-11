@@ -27,6 +27,7 @@ btn.addEventListener('click', () => {
         contador: contador
     }
     localStorage.setItem(contador, JSON.stringify(tweetObject))
+    textarea.value = ""
 })
 
 
@@ -54,6 +55,7 @@ function displayTweet(tweetObject) {
         }
         console.log(`id: ${id}`);
         localStorage.removeItem(id)
+        contador--
         if (id === aSpan.getAttribute('action'))
             div1.remove()
     })
